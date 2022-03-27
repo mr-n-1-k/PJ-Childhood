@@ -1,0 +1,67 @@
+// メディアクエリ //////////////////////////////////////////////////
+  @mixin media-query-tab {
+    @media screen and (max-width: map-get($width, 'tab'))  {
+      @content;
+    }
+  }
+  @mixin media-query-sp {
+    @media screen and (max-width: map-get($width, 'sp')) {
+    @content;
+    }
+  }
+
+// テキストスタイル //////////////////////////////////////////////////
+  @mixin text-style($color: #efefef, $letter-spacing: 40px, $line-height: 2,) {
+    color: $color;
+    letter-spacing: $letter-spacing;
+    line-height: $line-height;
+  }
+
+// フォントサイズ //////////////////////////////////////////////////
+  @mixin fz-top-title($device) {
+    @if $device == "pc" {
+      font-size: map-get($top-title, "pc");
+    }
+    @else if $device == "tab" {
+      font-size: map-get($top-title, "tab");
+    }
+    @else {
+      font-size: map-get($top-title, "sp");
+    }
+  }
+
+  @mixin fz-top-subtitle($device) {
+    @if $device == "pc" {
+      font-size: map-get($top-subtitle, "pc");
+    }
+    @else if $device == "tab" {
+      font-size: map-get($top-subtitle, "tab");
+    }
+    @else {
+      font-size: map-get($top-subtitle, "sp");
+    }
+  }
+
+  @mixin fz-section-title($device) {
+    @if $device == "pc" {
+      font-size: map-get($section-title, "pc");
+    }
+    @else if $device == "tab" {
+      font-size: map-get($section-title, "tab");
+    }
+    @else {
+      font-size: map-get($section-title, "sp");
+    }
+  }
+
+  @mixin fz-section-subtitle($device) {
+    @if $device == "pc" {
+      font-size: map-get($section-subtitle, "pc");
+    }
+    @else if $device == "tab" {
+      font-size: map-get($section-subtitle, "tab");
+    }
+    @else {
+      font-size: map-get($section-subtitle, "sp");
+    }
+  }
