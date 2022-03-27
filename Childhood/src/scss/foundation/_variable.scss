@@ -1,0 +1,69 @@
+// フォントサイズ //////////////////////////////////////////////////
+  // メインビジュアル タイトル
+    $top-title: (
+      pc: 88px,
+      tab: 56px,
+      sp: 40px,
+    );
+
+  // メインビジュアル サブタイトル
+    $top-subtitle: (
+      pc: 40px,
+      tab: 32px,
+      sp: 20px,
+    );
+    
+  // セクション タイトル
+    $section-title: (
+      pc: 200px,
+      tab: 144px,
+      sp: 100px,
+    );
+
+  // セクション サブタイトル
+    $section-subtitle: (
+      pc: 64px,
+      tab: 40px,
+      sp: 32px,
+    );
+
+  //アルファベット
+    $alphabet-name: (
+      pc: 64px,
+      tab: 64px,
+      sp: 40px,
+    );
+
+  // テキスト
+    $font-size: (
+      20px: 20px,
+      16px: 16px,
+    );
+
+// メディアクエリ //////////////////////////////////////////////////
+  // 画面サイズ
+    $width: (
+      pc: 1920px,
+      tab: 1080px,
+      sp: 768px,
+    );
+
+
+// カラーコード //////////////////////////////////////////////////
+  // 背景・テキスト
+    $black: #101010;
+    $white: #efefef;
+    $beige: #dddddd;
+
+  // セクションタイトル
+    $title-red: #ef00A5;
+    $title-blue: #00e5ef;
+    $member-alphabet: #f9f9f935;
+
+  // SNS
+    $sns: (
+      youtube: #da1725,
+      twitter: #1da1f2,
+      tik-tok: #000000,
+      // instagram: blue,
+    );
