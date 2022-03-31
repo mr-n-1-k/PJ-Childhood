@@ -1,0 +1,12 @@
+@use "../../foundation" as fd;
+
+
+.c-top-title {
+  @include text-style;
+  &__main {
+
+  }
+  &__sub {
+
+  }
+}

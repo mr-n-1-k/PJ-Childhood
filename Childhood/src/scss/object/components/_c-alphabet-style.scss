@@ -1,0 +1,6 @@
+@use "../../foundation" as fd;
+
+.c-alphabet-style {
+  @include text-style($letter-spacing: -0.05em);
+  
+}
