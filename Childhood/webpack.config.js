@@ -7,16 +7,18 @@ const JS_PATH = PATH.join(__dirname, './src/js');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");//MiniCssExtractPlugin の読み込み
 
 module.exports = {
- 
+
   entry: {
   	'style': JS_PATH + '/index.js',  
   },
 
   output: { 
-	filename: '[name].js',
+	  filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'images/[name][ext][query]',
-    clean: true,
+    clean: {
+      keep: /index.html/ + /assets\//
+    },
   },
   
   module: {
@@ -49,4 +51,5 @@ module.exports = {
   watchOptions: {
     ignored: /node_modules/  //正規表現で指定
   },
+  mode: "development",
 };
