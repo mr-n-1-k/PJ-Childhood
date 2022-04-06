@@ -2,5 +2,15 @@
 
 .c-alphabet-style {
   @include text-style($letter-spacing: -0.05em);
+  font-family: "copperplate";
+  &--red{
+    color: $red-neon;
+  }
+  &--blue{
+    color: $blue-neon;
+  }
+  &--gray{
+    color: $gray;
+  }
   
 }
