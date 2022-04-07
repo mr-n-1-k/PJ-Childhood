@@ -1,0 +1,13 @@
+@use "../../foundation" as fd;
+
+.c-sns-icon{
+    &--youtube{
+        background-color: variable-exists($sns(youtube));
+    }
+    &--twitter{
+        background-color: variable-exists($sns(twitter));
+    }
+    &--tik-tok{
+        background-color: variable-exists($sns(tik-tok));
+    }
+}
