@@ -1,6 +1,6 @@
 .c-text-style {
     @include text-style($letter-spacing: 0.1em);
-    &__black{
+    &--black{
         color: $black;
     }
 
