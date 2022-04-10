@@ -2,12 +2,12 @@
 
 .c-sns-icon{
     &--youtube{
-        background-color: variable-exists($sns(youtube));
+        background-color: map-get(var.$sns ,youtube);
     }
     &--twitter{
-        background-color: variable-exists($sns(twitter));
+        background-color: map-get(var.$sns ,twitter);
     }
     &--tik-tok{
-        background-color: variable-exists($sns(tik-tok));
+        background-color: map-get(var.$sns ,tik-tok);
     }
 }
