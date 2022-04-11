@@ -1,0 +1,13 @@
+@use "../../foundation" as fd;
+
+.c-sns-icon{
+    &--youtube{
+        background-color: map-get(var.$sns ,youtube);
+    }
+    &--twitter{
+        background-color: map-get(var.$sns ,twitter);
+    }
+    &--tik-tok{
+        background-color: map-get(var.$sns ,tik-tok);
+    }
+}
