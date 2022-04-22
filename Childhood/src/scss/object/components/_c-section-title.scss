@@ -1,0 +1,29 @@
+.c-section-title {
+  color: var.$white;
+  font-size: map-get(var.$section-title, pc);
+  opacity: 0.5;
+  @include fz-section-title(pc);
+
+  @include media-query-tab {
+    @include fz-section-title(tab);
+  }
+    
+  @include media-query-sp {
+    @include fz-section-title(sp);
+  }
+}
+
+.c-section-title--black {
+  color: var.$black;
+  font-size: map-get(var.$section-title, pc);
+  opacity: 0.5;
+  @include fz-section-title(pc);
+
+  @include media-query-tab {
+    @include fz-section-title(tab);
+  }
+    
+  @include media-query-sp {
+    @include fz-section-title(sp);
+  }
+}
