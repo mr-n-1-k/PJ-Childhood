@@ -46,15 +46,15 @@
   @mixin fz-section-title($device) {
     @if $device == "pc" {
       font-size: map-get(var.$section-title, "pc");
-      text-shadow: -8px 0px 0px rgba(var.$blue-neon.75), 8px 0px 0px rgba(var.$red-neon.75);
+      text-shadow: -8px 0px 0px rgba(var.$blue-neon,0.75), 8px 0px 0px rgba(var.$red-neon,0.75);
     }
     @else if $device == "tab" {
       font-size: map-get(var.$section-title, "tab");
-      text-shadow: -8px 0px 0px rgba(var.$blue-neon.75), 8px 0px 0px rgba(var.$red-neon.75);
+      text-shadow: -8px 0px 0px rgba(var.$blue-neon,0.75), 8px 0px 0px rgba(var.$red-neon,0.75);
     }
     @else {
       font-size: map-get(var.$section-title, "sp");
-      text-shadow: -4px 0px 0px rgba(var.$blue-neon.75), 4px 0px 0px rgba(var.$red-neon.75);
+      text-shadow: -4px 0px 0px rgba(var.$blue-neon,0.75), 4px 0px 0px rgba(var.$red-neon,0.75);
     }
   }
   @mixin fz-section-subtitle($device) {
