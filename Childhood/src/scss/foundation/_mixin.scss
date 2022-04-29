@@ -68,3 +68,11 @@
       font-size: map-get(var.$section-subtitle, "sp");
     }
   }
+// ボタン //////////////////////////////////////////////////
+  @mixin button-style($border-color: var.$white, $border-radius:5px) {
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
