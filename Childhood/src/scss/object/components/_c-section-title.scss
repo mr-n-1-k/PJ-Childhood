@@ -1,29 +1,31 @@
-.c-section-title {
-  color: var.$white;
-  font-size: map-get(var.$section-title, pc);
-  opacity: 0.5;
-  @include fz-section-title(pc);
+@use "../../foundation" as fd;
 
-  @include media-query-tab {
-    @include fz-section-title(tab);
+.c-section-title {
+  color: fd.$white;
+  font-size: map-get(fd.$section-title, pc);
+  opacity: 0.5;
+  @include fd.fz-section-title(pc);
+
+  @include fd.media-query-tab {
+    @include fd.fz-section-title(tab);
   }
     
-  @include media-query-sp {
-    @include fz-section-title(sp);
+  @include fd.media-query-sp {
+    @include fd.fz-section-title(sp);
   }
 }
 
 .c-section-title--black {
-  color: var.$black;
-  font-size: map-get(var.$section-title, pc);
+  color: fd.$black;
+  font-size: map-get(fd.$section-title, pc);
   opacity: 0.5;
-  @include fz-section-title(pc);
+  @include fd.fz-section-title(pc);
 
-  @include media-query-tab {
-    @include fz-section-title(tab);
+  @include fd.media-query-tab {
+    @include fd.fz-section-title(tab);
   }
     
-  @include media-query-sp {
-    @include fz-section-title(sp);
+  @include fd.media-query-sp {
+    @include fd.fz-section-title(sp);
   }
 }

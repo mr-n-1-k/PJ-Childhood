@@ -1,3 +1,5 @@
+@use "../../foundation" as fd;
+
 .c-button{
-  @include button-style()
+  @include fd.button-style()
 }

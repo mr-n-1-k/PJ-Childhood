@@ -1,7 +1,9 @@
+@use "../../foundation" as fd;
+
 .c-text-style {
     @include text-style($letter-spacing: 0.1em);
     &__black{
-        color: $black;
+        color: fd.$black;
     }
 
 }
