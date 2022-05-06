@@ -1,0 +1,11 @@
+@use "../../foundation" as fd;
+
+.c-square{
+  margin: 0 auto;
+  &__black{
+    background-color: fd.$black;
+  }
+  &__white{
+    background-color: fd.$white;
+  }
+}
