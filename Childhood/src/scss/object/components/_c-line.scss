@@ -1,8 +1,11 @@
 @use "../../foundation" as fd;
 
 .c-line{
-  position: relative;
-  top: 50%;
-  transform: rotate(0deg);
-  border: 1px solid fd.$black;
+
+  &__black{
+    @include fd.line-style(fd.$black)
+  }
+  &__white{
+    @include fd.line-style(fd.$white)
+  }
 }
