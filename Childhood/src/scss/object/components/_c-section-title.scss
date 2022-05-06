@@ -1,7 +1,6 @@
 @use "../../foundation" as fd;
 
 .c-section-title {
-  color: fd.$white;
   font-size: map-get(fd.$section-title, pc);
   opacity: 0.5;
   @include fd.fz-section-title(pc);
@@ -13,19 +12,14 @@
   @include fd.media-query-sp {
     @include fd.fz-section-title(sp);
   }
-}
-
-.c-section-title--black {
-  color: fd.$black;
-  font-size: map-get(fd.$section-title, pc);
-  opacity: 0.5;
-  @include fd.fz-section-title(pc);
-
-  @include fd.media-query-tab {
-    @include fd.fz-section-title(tab);
+  // ブラック //////////////////////////////////////////////////
+  &__black{
+    @extend.c-section-title;
+    color: fd.$black;
   }
-    
-  @include fd.media-query-sp {
-    @include fd.fz-section-title(sp);
+  // ホワイト //////////////////////////////////////////////////
+  &__white{
+    @extend.c-section-title;
+    color: fd.$white;
   }
 }
