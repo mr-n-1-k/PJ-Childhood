@@ -13,12 +13,12 @@
     @include fd.fz-section-title(sp);
   }
   // ブラック //////////////////////////////////////////////////
-  &__black{
+  &--black{
     @extend.c-section-title;
     color: fd.$black;
   }
   // ホワイト //////////////////////////////////////////////////
-  &__white{
+  &--white{
     @extend.c-section-title;
     color: fd.$white;
   }

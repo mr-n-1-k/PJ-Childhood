@@ -2,10 +2,10 @@
 
 .c-square{
   margin: 0 auto;
-  &__black{
+  &--black{
     background-color: fd.$black;
   }
-  &__white{
+  &--white{
     background-color: fd.$white;
   }
 }
