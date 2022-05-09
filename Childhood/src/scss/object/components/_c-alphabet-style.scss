@@ -1,0 +1,16 @@
+@use "../../foundation" as fd;
+
+.c-alphabet-style {
+  @include fd.text-style($letter-spacing: -0.05em);
+  font-family: "copperplate";
+  &--red{
+    color: fd.$red-neon;
+  }
+  &--blue{
+    color: fd.$blue-neon;
+  }
+  &--gray{
+    color: fd.$gray;
+  }
+  
+}

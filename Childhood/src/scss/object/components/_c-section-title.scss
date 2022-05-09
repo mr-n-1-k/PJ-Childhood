@@ -1,0 +1,25 @@
+@use "../../foundation" as fd;
+
+.c-section-title {
+  font-size: map-get(fd.$section-title, pc);
+  opacity: 0.5;
+  @include fd.fz-section-title(pc);
+
+  @include fd.media-query-tab {
+    @include fd.fz-section-title(tab);
+  }
+    
+  @include fd.media-query-sp {
+    @include fd.fz-section-title(sp);
+  }
+  // ブラック //////////////////////////////////////////////////
+  &--black{
+    @extend.c-section-title;
+    color: fd.$black;
+  }
+  // ホワイト //////////////////////////////////////////////////
+  &--white{
+    @extend.c-section-title;
+    color: fd.$white;
+  }
+}
