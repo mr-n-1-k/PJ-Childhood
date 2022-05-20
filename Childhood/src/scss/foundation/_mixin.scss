@@ -77,9 +77,9 @@
     align-items: center;
   }
 
-// 子要素が親要素の何%占めているかの計算 //////////////////////////////////////////////////
-  @mixin percent-calculator($child-width,$parent-width) {
-  width: round(($child-width / $parent-width) * 100%);
+// 子要素が親要素の何%占めているかの計算する関数 //////////////////////////////////////////////////
+  @function percent-calculator($child-width,$parent-width) {
+  @return round(($child-width / $parent-width) * 100%);
   }
 
   

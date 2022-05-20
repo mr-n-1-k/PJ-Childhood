@@ -29,7 +29,7 @@
     text-align: center;
     margin: 160px auto 0;
     &__image{
-      @include fd.percent-calculator(300,376);
+      width: fd.percent-calculator(300,376);
       margin: 0 auto;
     }
   }
