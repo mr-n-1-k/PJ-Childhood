@@ -1,0 +1,12 @@
+@use "../../foundation" as fd;
+
+.profile-group{
+  max-width: 1400px;
+  display: flex;
+  gap: fd.percent-calculator(160,1400);
+  justify-content: space-between;
+  margin: 20% 10% 0;   //調整中//
+  @include fd.media-query-sp{
+    display: block;
+  }
+}
