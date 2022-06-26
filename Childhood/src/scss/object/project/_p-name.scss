@@ -1,0 +1,13 @@
+@use "../../foundation" as fd;
+.p-name{
+  position: relative;
+  &__ja{
+    
+  }
+  &__en{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    white-space: nowrap;
+  }
+}
