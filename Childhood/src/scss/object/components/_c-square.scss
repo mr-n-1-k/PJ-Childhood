@@ -2,6 +2,9 @@
 
 .c-square{
   margin: 0 auto;
+  &__oblique-line{
+    background-image: linear-gradient(to top left, transparent 49%, fd.$black 50%, fd.$black 50%, transparent 51%);
+  }
   &--black{
     background-color: fd.$black;
   }
