@@ -1,8 +1,16 @@
 @use "../../foundation" as fd;
 
 .c-alphabet-style {
-  @include fd.text-style($letter-spacing: -0.05em);
+  @include fd.text-style($letter-spacing: -0.05em, $line-height: 1em);
   font-family: "copperplate";
+  &__name{
+    @extend .c-alphabet-style;
+    font-size: clamp(map-get(fd.$alphabet-name,'sp'), 3.703vw, map-get(fd.$alphabet-name,'pc'));
+    &--gray{
+      @extend .c-alphabet-style__name;
+      color: fd.$gray;
+    }
+  }
   &--red{
     color: fd.$red-neon;
   }
