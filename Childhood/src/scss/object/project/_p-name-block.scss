@@ -1,0 +1,13 @@
+@use "../../foundation" as fd;
+.p-name-block{
+  &__job{
+    align-self: flex-start;
+  }
+  &__line{
+    width: 40px;
+    height: 58px;
+  }
+  &__name{
+    align-self: center;
+  }
+}
