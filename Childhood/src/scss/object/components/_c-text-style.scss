@@ -1,9 +1,26 @@
 @use "../../foundation" as fd;
 
 .c-text-style {
-    @include fd.text-style($letter-spacing: 0.1em);
-    &--black{
-        color: fd.$black;
+    @include fd.text-style($letter-spacing: 0.1em, $line-height: 1em);
+    font-family: "ヒラギノ角ゴシック";
+    &__font-size16{
+        @extend .c-text-style;
+        font-size: map-get(fd.$font-size, '16px');
+        font-weight: 300;
+        &--black{
+            @extend .c-text-style__font-size16;
+            color: fd.$black;
+        }
     }
+    &__font-size20{
+        @extend .c-text-style;
+        font-size: map-get(fd.$font-size, '20px');
+        font-weight: 400;
+        &--black{
+            @extend .c-text-style__font-size20;
+            color: fd.$black;
+        }
+    }
+    
 
 }
