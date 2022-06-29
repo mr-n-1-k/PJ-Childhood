@@ -1,0 +1,21 @@
+.p-profile{
+  display: inline-block;
+  &__inner{
+    max-width: 620px;
+  }
+  &__image{
+    width: 620px;
+    height: 720px;
+    max-width: 620px;
+    max-height: 720px;
+  }
+  &__name-block{
+    margin: 40px 0;
+  }
+  &__text-block{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
