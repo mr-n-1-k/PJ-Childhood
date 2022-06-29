@@ -1,0 +1,12 @@
+.c-image-trimming{
+  object-fit: cover;
+
+  &__profile{
+    @extend .c-image-trimming;
+    width: 100%;
+    height: 100%;
+    max-width: 620px;
+    max-height: 720px;
+  }
+
+}
